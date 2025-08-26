@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/shivangverma/c++ language/cprograms/tree_traversal'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _newNode, symObjAddr: 0x0, symBinAddr: 0x100003CFC, symSize: 0x48 }
+  - { offsetInCU: 0x7A, offset: 0x7A, size: 0x8, addend: 0x0, symName: _newNode, symObjAddr: 0x0, symBinAddr: 0x100003CFC, symSize: 0x48 }
+  - { offsetInCU: 0xB0, offset: 0xB0, size: 0x8, addend: 0x0, symName: _inorder, symObjAddr: 0x48, symBinAddr: 0x100003D44, symSize: 0x6C }
+  - { offsetInCU: 0xD4, offset: 0xD4, size: 0x8, addend: 0x0, symName: _preorder, symObjAddr: 0xB4, symBinAddr: 0x100003DB0, symSize: 0x6C }
+  - { offsetInCU: 0xF8, offset: 0xF8, size: 0x8, addend: 0x0, symName: _postorder, symObjAddr: 0x120, symBinAddr: 0x100003E1C, symSize: 0x6C }
+  - { offsetInCU: 0x11C, offset: 0x11C, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x18C, symBinAddr: 0x100003E88, symSize: 0xD8 }
+...

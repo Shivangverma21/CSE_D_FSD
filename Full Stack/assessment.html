@@ -1,0 +1,36 @@
+<!-- create an image gallery with thumbnails using html and css (grid or flexbox) when a thumbnail is clicked open the image in an modal
+ using javascript at css transaction to fade in ,to fade out the modal include a close button and allow clicking outside the modal to 
+ close it  -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="1.jpg" alt="Image 1" class="thumbnail" onclick="openModal('1.jpg')">
+        <img src="2.jpg" alt="Image 2" class="thumbnail" onclick="openModal('2.jpg')">
+        <img src="3.jpg" alt="Image 3" class="thumbnail" onclick="openModal('3.jpg')">
+        <img src="1.jpg" alt="Image 1" class="thumbnail" onclick="openModal('1.jpg')">
+        <img src="2.jpg" alt="Image 2" class="thumbnail" onclick="openModal('2.jpg')">
+        <img src="3.jpg" alt="Image 3" class="thumbnail" onclick="openModal('3.jpg')">
+        <img src="1.jpg" alt="Image 1" class="thumbnail" onclick="openModal('1.jpg')">
+        <img src="2.jpg" alt="Image 2" class="thumbnail" onclick="openModal('2.jpg')">
+        <img src="3.jpg" alt="Image 3" class="thumbnail" onclick="openModal('3.jpg')">
+        <img src="1.jpg" alt="Image 1" class="thumbnail" onclick="openModal('1.jpg')">
+        <img src="2.jpg" alt="Image 2" class="thumbnail" onclick="openModal('2.jpg')">
+        <img src="3.jpg" alt="Image 3" class="thumbnail" onclick="openModal('3.jpg')">
+    </div>
+
+    <div id="modal" class="modal" onclick="closeModal(event)">
+        <span class="close" onclick="closeModal(event)">&times;</span>
+        <img class="modal-content" id="modalImage"> 
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

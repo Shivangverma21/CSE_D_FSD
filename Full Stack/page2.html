@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #counter {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Reverse Text</h2>
+    <input type="text" id="inputText" placeholder="Enter text">
+    <button onclick="reverseText()">Reverse Text</button>
+    <p id="reversedText"></p>
+
+    <hr>
+    <h2>Toggle Background Color</h2>
+    <p id="toggleParagraph" onclick="toggleBackgroundColor()">Click me to toggle background color</p>
+
+    <hr>
+    <h2>Add li Element</h2>
+    <button onclick="addListItem()">Add List Item</button>
+    <ul id="itemList"></ul>
+
+    <hr>
+    <h2>Counter</h2>
+    <button id="startButton" onclick="startCounter()">Start Counter</button>
+    <button id="stopButton" onclick="stopCounter()">Stop Counter</button>
+    <p id="counter">0</p>
+
+    <script>
+        function reverseText() {
+            var inputText = document.getElementById('inputText').value;
+            var reversed = inputText.split('').reverse().join('');
+            document.getElementById('reversedText').innerText = reversed;
+        }
+        function toggleBackgroundColor() {
+            var paragraph = document.getElementById('toggleParagraph');
+            if (paragraph.style.backgroundColor === 'yellow') {
+                paragraph.style.backgroundColor = 'white';
+            } else {
+                paragraph.style.backgroundColor = 'yellow';
+            }
+        }
+        function addListItem() {
+            var ul = document.getElementById('itemList');
+            var li = document.createElement('li');
+            li.innerText = 'New List Item';
+            li.addEventListener('click', function() {
+                console.log(li.innerText);
+            });
+            ul.appendChild(li);
+        }
+        var counterInterval;
+        var counterValue = 0;
+
+        function startCounter() {
+            if (counterInterval) return;
+
+            counterInterval = setInterval(function() {
+                counterValue++;
+                document.getElementById('counter').innerText = counterValue;
+            }, 1000); 
+        }
+
+        function stopCounter() {
+            if (counterInterval) {
+                clearInterval(counterInterval);
+                counterInterval = null;
+            }
+        }
+    </script>
+
+</body>
+</html>

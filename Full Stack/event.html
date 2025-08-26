@@ -1,0 +1,93 @@
+<!-- <html>
+    <head>
+        <script src="script.js">
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to the HTMl</h1>
+        <p id="pass" onmouseover="effect()" onmouseout="effectback()">My Paragraph</p>
+    </body>
+</html> -->
+
+<!-- <html>
+    <head>
+        <script src="script.js">
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to the HTMl</h1>
+        <p id="pass" onmouseover="effect()" onmouseout="effectback()">My Paragraph</p>
+    </body>
+</html> -->
+
+
+
+<!-- <html>
+    <head>
+        <title>Dom program</title>
+        <script>
+            function f1()
+            {
+                var x=document.getElementsByTagName("p1");
+                alert(x[0].innerHTML);
+                alert(x[1].innerHTML);
+            }
+            f1();
+        </script>
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <p id="p1">This is my paragraph</p>
+        <button onclick="f1()">click</button>
+    </body>
+</html> -->
+
+
+//Ques.1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Example</title>
+    <script>
+        function changeText() {
+            document.getElementById("text").innerText = "The text has been changed!";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Text Change Example</h1>
+    <p id="text">This is the original text.</p>
+    <button onclick="changeText()">Change Text</button>
+</body>
+</html>
+
+
+//Ques.2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Paragraph</title>
+</head>
+<body>
+
+    <h2>Update Paragraph Example</h2>
+    <input type="text" id="textInput" placeholder="Enter text here">
+    <button onclick="updateParagraph()">Update Paragraph</button>
+    <p id="displayParagraph">This is the original paragraph text.</p>
+    <script>
+        function updateParagraph() {
+            const inputText = document.getElementById('textInput').value;
+            document.getElementById('displayParagraph').textContent = inputText;
+        }
+    </script>
+</body>
+</html>

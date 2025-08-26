@@ -1,0 +1,141 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "iteratorinterface",
+            "request": "launch",
+            "mainClass": "iteratorinterface",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "sealedclass",
+            "request": "launch",
+            "mainClass": "sealedclass",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "main",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "Strings",
+            "request": "launch",
+            "mainClass": "Strings",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "multi",
+            "request": "launch",
+            "mainClass": "multi",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "multiRunnable",
+            "request": "launch",
+            "mainClass": "multiRunnable",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "ques1",
+            "request": "launch",
+            "mainClass": "ques1",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "mythread",
+            "request": "launch",
+            "mainClass": "mythread",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "th",
+            "request": "launch",
+            "mainClass": "th",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "practiceset_ch2",
+            "request": "launch",
+            "mainClass": "practiceset_ch2",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "stream",
+            "request": "launch",
+            "mainClass": "stream",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "Precedence_Associativity",
+            "request": "launch",
+            "mainClass": "Precedence_Associativity",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "Operators",
+            "request": "launch",
+            "mainClass": "Operators",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "practiceset_ch1",
+            "request": "launch",
+            "mainClass": "practiceset_ch1",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "practiceset_ch1_q1",
+            "request": "launch",
+            "mainClass": "practiceset_ch1_q1",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "Exercise1",
+            "request": "launch",
+            "mainClass": "Exercise1",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "TakingInput",
+            "request": "launch",
+            "mainClass": "TakingInput",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "FileInput",
+            "request": "launch",
+            "mainClass": "FileInput",
+            "projectName": "c++ language_12762c82"
+        }
+    ]
+}
