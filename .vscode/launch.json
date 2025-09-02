@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InsertionSortExample",
+            "request": "launch",
+            "mainClass": "DAA.InsertionSortExample",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "binary_search",
+            "request": "launch",
+            "mainClass": "DAA.binary_search",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "linear_search",
+            "request": "launch",
+            "mainClass": "DAA.linear_search",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
             "name": "iteratorinterface",
             "request": "launch",
             "mainClass": "iteratorinterface",
