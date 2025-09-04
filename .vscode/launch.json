@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "quickSort",
+            "request": "launch",
+            "mainClass": "DAA.quickSort",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "DAA.QuickSort",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "selectionSort",
+            "request": "launch",
+            "mainClass": "DAA.selectionSort",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
+            "name": "InsertionSort",
+            "request": "launch",
+            "mainClass": "DAA.InsertionSort",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
             "name": "InsertionSortExample",
             "request": "launch",
             "mainClass": "DAA.InsertionSortExample",

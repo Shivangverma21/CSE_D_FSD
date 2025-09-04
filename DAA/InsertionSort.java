@@ -1,5 +1,5 @@
 package DAA;
-public class InsertionSortExample {
+public class InsertionSort {
     public static void main(String[] args) {
         int[] arr = {5, 2, 9, 1, 5, 6};
         insertionSort(arr);
