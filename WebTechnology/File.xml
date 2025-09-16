@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE college SYSTEM "File.dtd">
+<college>
+    <class>
+        <sname>Amit</sname>
+        <roll>101</roll>
+        <marks>50</marks>
+    </class>
+</college>
+
