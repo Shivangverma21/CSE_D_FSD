@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Marks System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+    .left {
+      flex: 1;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    .note {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+    .right {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .right button {
+      padding: 8px;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .right button:hover {
+      background: #0056b3;
+    }
+    .right input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>Student Marks System</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Marks</th>
+          </tr>
+        </thead>
+        <tbody id="studentList">
+          <tr><td>Amit</td><td>85</td></tr>
+          <tr><td>Priya</td><td>92</td></tr>
+          <tr><td>Rahul</td><td>76</td></tr>
+          <tr><td>Sneha</td><td>88</td></tr>
+          <tr><td>Karan</td><td>95</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="right">
+      <button id="highestBtn">Show Highest</button>
+      <button id="avgBtn">Show Average</button>
+      <button id="sortBtn">Sort by Marks</button>
+      <button id="resetBtn">Reset Sample</button>
+      <button id="removeBtn">Remove Last</button>
+      <h4>Add a student</h4>
+      <input type="text" id="nameInput" placeholder="Student name">
+      <input type="number" id="marksInput" placeholder="Marks (0-100)">
+      <button id="addBtn">Add Student</button>
+    </div>
+  </div>
+
+  <script>
+    const studentList = document.getElementById("studentList");
+    const highestBtn = document.getElementById("highestBtn");
+    const avgBtn = document.getElementById("avgBtn");
+    const sortBtn = document.getElementById("sortBtn");
+    const resetBtn = document.getElementById("resetBtn");
+    const removeBtn = document.getElementById("removeBtn");
+    const addBtn = document.getElementById("addBtn");
+    const nameInput = document.getElementById("nameInput");
+    const marksInput = document.getElementById("marksInput");
+
+    const sampleData = [
+     
+    ];
+
+    function renderTable(data) {
+      studentList.innerHTML = "";
+      data.forEach(([name, marks]) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td>${name}</td><td>${marks}</td>`;
+        studentList.appendChild(tr);
+      });
+    }
+
+    function getData() {
+      const rows = studentList.querySelectorAll("tr");
+      return Array.from(rows).map(row => {
+        const tds = row.querySelectorAll("td");
+        return [tds[0].textContent, Number(tds[1].textContent)];
+      });
+    }
+
+    highestBtn.addEventListener("click", () => {
+      const data = getData();
+      let highest = data.reduce((a, b) => (a[1] > b[1] ? a : b));
+      alert(Highest: ${highest[0]} (${highest[1]}));
+    });
+
+    avgBtn.addEventListener("click", () => {
+      const data = getData();
+      const avg = data.reduce((sum, item) => sum + item[1], 0) / data.length;
+      alert(Average Marks: ${avg.toFixed(2)});
+    });
+
+    sortBtn.addEventListener("click", () => {
+      let data = getData();
+      data.sort((a, b) => b[1] - a[1]);
+      renderTable(data);
+    });
+
+    resetBtn.addEventListener("click", () => {
+      renderTable(sampleData);
+    });
+
+    removeBtn.addEventListener("click", () => {
+      let data = getData();
+      data.pop();
+      renderTable(data);
+    });
+
+    addBtn.addEventListener("click", () => {
+      const name = nameInput.value.trim();
+      const marks = Number(marksInput.value.trim());
+      if (name === "" || isNaN(marks)) {
+        alert("Please enter valid name and marks");
+        return;
+      }
+      let data = getData();
+      data.push([name, marks]);
+      renderTable(data);
+      nameInput.value = "";
+      marksInput.value = "";
+    });
+
+    renderTable(sampleData);
+  </script>
+</body>
+</html>

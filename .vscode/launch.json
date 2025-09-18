@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Max_Heapify",
+            "request": "launch",
+            "mainClass": "DAA.Max_Heapify",
+            "projectName": "c++ language_12762c82"
+        },
+        {
+            "type": "java",
             "name": "quickSort",
             "request": "launch",
             "mainClass": "DAA.quickSort",
